@@ -4,8 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body{
+    background-image: url("https://b.rgbimg.com/users/x/xy/xymonau/600/mgZP6rW.jpg");
+}
+.*{
+    font-family: serif;
+}
+.buttons{
+
+    background-color:hotpink;
+    border:none;
+    border-radius:20px ;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin:20px;
+}
+section{
+    height: 100vh;
+    border: 1px solid black;
+    border-radius: 60px;
+    margin:20px;
+}
+main{
+    padding: 20px;
+}
+.over{
+    background-color:hotpink;
+    border:none;
+    border-radius:20px ;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin:20px;
+}
+footer{
+    height: 10vh;
+    color: firebrick;
+}
+.fixed{
+    position: fixed;
+    background-color:hotpink;
+    border:none;
+    border-radius:30px ;
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    margin:20px;
+    bottom: 10px;
+    right: 30px;
+}
+    </style>
 </head>
 <body>
-    hi this is ram 
+    <section id="about">
+    <header>
+        <center>
+        <i><h1 style="color:blue;font-style: italic;top:20px;">JAYARAM<h1></i>
+        <h1 style="color:firebrick;"><i>Welocme To My Portfolic</i></h1>
+        <button class="buttons">about</button>
+        <button class="buttons">skills</button>
+        <button class="buttons">projects</button>
+        <button class="buttons">contact</button>
+        <button class="fixed">Top</button>
+    </center>
+    </header>
+ 
+    <center>
+        <img src="https://img-c.udemycdn.com/course/750x422/5380132_3dad.jpg" alt="Hi" width="900" height="500">
+        </center>
+</section>
+<main></main>
+<section id="my projects">
+    <center>
+        <h1 style="color:firebrick;">My Projects</h1>
+
+    <table border="2">
+        <tr>
+            <th>S.NO</th>
+            <th>Projects</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Complete HTML CSS JS</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Start React</td>
+        </tr>
+    </table>
+    </center>
+</section>
+</main>
+
+
+<section>
+    <h1 style="color: firebrick;"><center>Contact me</center></h1> 
+
+    <i><center><p style="font-weight: lighter; font-size: larger;">Feel Free to Get Touch With Me In This Form</center></p></i>
+<br>
+<br>
+<center>
+<label for="mail">Email:</label>
+<input type="email" id="mail" required>
+<br>
+<br>
+<label for="key">Password:</label>
+<input type="password" id="key" required>
+<br>
+<br>
+<br>
+Choose Your Gender :
+<input type="radio" id="male">
+<label for="male">Male</label>
+<input type="radio" id="female">
+<label for="female">Female</label>
+<br>
+<br>
+<br>
+Select Your Interest :
+<select>
+ <option>C</option>
+ <option>DSA</option>
+ <option>Python</option>
+ <option>Java</option>
+</select>
+<br>
+<br>
+<br>
+<p>Bio Discription</p>
+<textarea></textarea>
+<br>
+<button class="over">Submit</button>
+</center>
+</section>
+<footer>
+    @2024 My Portfolic
+</footer>
+
 </body>
+
 </html>
