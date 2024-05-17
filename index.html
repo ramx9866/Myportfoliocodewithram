@@ -8,7 +8,7 @@
 body{
     background-image: url("https://b.rgbimg.com/users/x/xy/xymonau/600/mgZP6rW.jpg");
 }
-.*{
+*{
     font-family: serif;
 }
 .buttons{
@@ -55,24 +55,87 @@ footer{
     bottom: 10px;
     right: 30px;
 }
+
+@media(min-width:900px){
+.google{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    cursor: pointer;
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 40px;
+    width:100vh;
+    margin-top: 20px;
+}
+.subgoogle{
+       display: flex;
+        width:20vh;
+        cursor:pointer;
+       justify-content:space-between;
+    }
+}
+@media(max-width:420px){
+.google{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    cursor: pointer;
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 40px;
+    width:25vh;
+    margin-top: 20px;
+}
+.subgoogle{
+       display: flex;
+       visibility: hidden;
+        width:10vh;
+        cursor:pointer;
+       justify-content:space-between;
+    }
+}
+@media(min-width:900px){
+    .image{
+      width:600px;
+      height: 400px;
+}
+}
+@media(min-width:300px){
+    .image{
+        padding-top: 30px;
+      width:200px;
+      height: 150px;
+}
+}
+
     </style>
 </head>
 <body>
+
     <section id="about">
     <header>
         <center>
+            
+            <div class="google">
+             <div>google</div>
+             <div class="subgoogle">
+             <div >X</div>
+             <div>H</div>
+             <div>I</div>
+             </div>
+            </div>
         <i><h1 style="color:blue;font-style: italic;top:20px;">JAYARAM<h1></i>
         <h1 style="color:firebrick;"><i>Welocme To My Portfolic</i></h1>
-        <button class="buttons">about</button>
-        <button class="buttons">skills</button>
-        <button class="buttons">projects</button>
-        <button class="buttons">contact</button>
-        <button class="fixed">Top</button>
+       <a href="#about"> <button class="buttons" >about</button></a>
+       <a  href="#my projects"> <button class="buttons">projects</button></a>
+      <a href="#contact me"><button class="buttons" >contact</button></a>
+       <a href="#about"> <button class="fixed">Top</button></a>
     </center>
     </header>
  
     <center>
-        <img src="https://img-c.udemycdn.com/course/750x422/5380132_3dad.jpg" alt="Hi" width="700" height="400">
+        <img src="https://img-c.udemycdn.com/course/750x422/5380132_3dad.jpg" class="image">
         </center>
 </section>
 <main></main>
@@ -98,7 +161,7 @@ footer{
 </main>
 
 
-<section>
+<section id="contact me">
     <h1 style="color: firebrick;margin-top: 15vh;"><center>Contact me</center></h1> 
 
     <i><center><p style="font-weight: lighter; font-size: larger;">Feel Free to Get Touch With Me In This Form</center></p></i>
