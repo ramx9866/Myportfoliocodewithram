@@ -12,7 +12,6 @@ body{
     font-family: serif;
 }
 .buttons{
-
     background-color:hotpink;
     border:none;
     border-radius:20px ;
@@ -20,6 +19,13 @@ body{
     width: 100px;
     height: 50px;
     margin:20px;
+    transition: color 2s linear 0s;
+    transition: background-color 2s ease-out 0s;
+}
+.buttons:hover{
+   background-color: blueviolet;
+   color:white;
+   transform: translateY(-10px);
 }
 section{
     height: 100vh;
@@ -75,7 +81,7 @@ footer{
        justify-content:space-between;
     }
 }
-@media(max-width:420px){
+@media(max-width:899px){
 .google{
     display:flex;
     flex-direction:row;
@@ -101,7 +107,7 @@ footer{
       height: 400px;
 }
 }
-@media(max-width:440px){
+@media(max-width:899px){
     .image{
       padding-top:30px;
       width:250px;
@@ -204,6 +210,18 @@ Select Your Interest :
 <footer>
     @2024 My Portfolic
 </footer>
+
+<script>
+    var a="hi this is js";
+    console.log(a);
+    var b=document.getElementById("contact me");
+     
+    console.log(b);
+    fun();
+    function fun(){
+        alert("ramx_18");
+    }
+</script>
 
 </body>
 
